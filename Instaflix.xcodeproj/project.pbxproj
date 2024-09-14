@@ -8,14 +8,57 @@
 
 /* Begin PBXBuildFile section */
 		0167FB8C2C90A21A0049AE83 /* InstaflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB8B2C90A21A0049AE83 /* InstaflixApp.swift */; };
-		0167FB8E2C90A21A0049AE83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB8D2C90A21A0049AE83 /* ContentView.swift */; };
 		0167FB902C90A21B0049AE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167FB8F2C90A21B0049AE83 /* Assets.xcassets */; };
 		0167FB932C90A21B0049AE83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167FB922C90A21B0049AE83 /* Preview Assets.xcassets */; };
-		0167FB952C90A21B0049AE83 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB942C90A21B0049AE83 /* Persistence.swift */; };
-		0167FB982C90A21B0049AE83 /* Instaflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB962C90A21B0049AE83 /* Instaflix.xcdatamodeld */; };
+		0167FB952C90A21B0049AE83 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB942C90A21B0049AE83 /* CoreDataManager.swift */; };
+		0167FB982C90A21B0049AE83 /* InstaflixDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0167FB962C90A21B0049AE83 /* InstaflixDB.xcdatamodeld */; };
 		0167FBA22C90A21B0049AE83 /* InstaflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBA12C90A21B0049AE83 /* InstaflixTests.swift */; };
 		0167FBAC2C90A21B0049AE83 /* InstaflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBAB2C90A21B0049AE83 /* InstaflixUITests.swift */; };
 		0167FBAE2C90A21B0049AE83 /* InstaflixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBAD2C90A21B0049AE83 /* InstaflixUITestsLaunchTests.swift */; };
+		0167FBBD2C90B6950049AE83 /* MediaItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBBC2C90B6950049AE83 /* MediaItemCell.swift */; };
+		0167FBC12C90C2D70049AE83 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0167FBC02C90C2D70049AE83 /* SDWebImageSwiftUI */; };
+		0167FBC42C90C4A20049AE83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBC32C90C4A20049AE83 /* Constants.swift */; };
+		0167FBC62C90FC490049AE83 /* SkeletonShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBC52C90FC490049AE83 /* SkeletonShimmer.swift */; };
+		0167FBC82C91FC400049AE83 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBC72C91FC400049AE83 /* FilterCell.swift */; };
+		0167FBCA2C9203340049AE83 /* FilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBC92C9203340049AE83 /* FilterBarView.swift */; };
+		0167FBCF2C9209040049AE83 /* Primitives+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBCE2C9209040049AE83 /* Primitives+Extension.swift */; };
+		0167FBD12C923FF10049AE83 /* DMMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBD02C923FF10049AE83 /* DMMediaItem.swift */; };
+		0167FBD52C925DE60049AE83 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBD42C925DE60049AE83 /* CoreDataHelpers.swift */; };
+		0167FBD72C925EF80049AE83 /* DBMediaItem+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBD62C925EF80049AE83 /* DBMediaItem+CoreData.swift */; };
+		0167FBDC2C92652F0049AE83 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBDB2C92652F0049AE83 /* Error.swift */; };
+		0167FBDE2C92653E0049AE83 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBDD2C92653E0049AE83 /* Configuration.swift */; };
+		0167FBE02C9265620049AE83 /* Debugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBDF2C9265620049AE83 /* Debugger.swift */; };
+		0167FBE32C92677B0049AE83 /* InstaflixSensitive.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0167FBE22C92677B0049AE83 /* InstaflixSensitive.plist */; };
+		0167FBE62C926C4E0049AE83 /* ClientSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBE52C926C4E0049AE83 /* ClientSetup.swift */; };
+		0167FBE92C92AC550049AE83 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBE82C92AC550049AE83 /* RequestBuilder.swift */; };
+		0167FBEB2C92AE830049AE83 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBEA2C92AE830049AE83 /* Types.swift */; };
+		0167FBED2C92B2410049AE83 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBEC2C92B2410049AE83 /* URL+Extensions.swift */; };
+		0167FBEF2C92B27B0049AE83 /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBEE2C92B27B0049AE83 /* Combine+Extensions.swift */; };
+		0167FBF12C92B4440049AE83 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBF02C92B4440049AE83 /* NetworkRequest.swift */; };
+		0167FBF32C92B4FC0049AE83 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBF22C92B4FC0049AE83 /* NetworkClient.swift */; };
+		0167FBF52C92B5F30049AE83 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBF42C92B5F30049AE83 /* ClientManager.swift */; };
+		0167FBF92C92BB080049AE83 /* MediaItemsRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBF82C92BB080049AE83 /* MediaItemsRemote.swift */; };
+		0167FBFC2C92CD6A0049AE83 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBFB2C92CD6A0049AE83 /* TaskScheduler.swift */; };
+		0167FBFF2C92D0600049AE83 /* MediaItemAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FBFE2C92D0600049AE83 /* MediaItemAPIRepository.swift */; };
+		0167FC022C92D1CE0049AE83 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC012C92D1CE0049AE83 /* DependencyInjector.swift */; };
+		0167FC042C92D2F90049AE83 /* MediaItemDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC032C92D2F90049AE83 /* MediaItemDBRepository.swift */; };
+		0167FC062C938F430049AE83 /* LoadingSubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC052C938F430049AE83 /* LoadingSubjects.swift */; };
+		0167FC082C938F4E0049AE83 /* NetworkHelpers+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC072C938F4E0049AE83 /* NetworkHelpers+Combine.swift */; };
+		0167FC0A2C938FBD0049AE83 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC092C938FBD0049AE83 /* CancelBag.swift */; };
+		0167FC0D2C93905F0049AE83 /* MediaItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC0C2C93905F0049AE83 /* MediaItemsUseCase.swift */; };
+		0167FC112C93A4EF0049AE83 /* AppDI+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC102C93A4EF0049AE83 /* AppDI+Injections.swift */; };
+		0167FC182C93A8150049AE83 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC172C93A8150049AE83 /* Routing.swift */; };
+		0167FC1A2C93A8C80049AE83 /* AppRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC192C93A8C80049AE83 /* AppRouting.swift */; };
+		0167FC202C93B2650049AE83 /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC1F2C93B2650049AE83 /* GeometryReader.swift */; };
+		0167FC222C93B5200049AE83 /* NavigationBarConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC212C93B5200049AE83 /* NavigationBarConfig.swift */; };
+		0167FC242C93BAA90049AE83 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC232C93BAA90049AE83 /* MainViewModel.swift */; };
+		0167FC262C93C4550049AE83 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC252C93C4550049AE83 /* MainView.swift */; };
+		0167FC282C93FA210049AE83 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC272C93FA210049AE83 /* MainCoordinator.swift */; };
+		0167FC2A2C9406D70049AE83 /* ViewLyfeCicleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC292C9406D70049AE83 /* ViewLyfeCicleModifier.swift */; };
+		0167FC2C2C9409970049AE83 /* ErrorRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC2B2C9409970049AE83 /* ErrorRequestView.swift */; };
+		0167FC2E2C9411E50049AE83 /* LocationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC2D2C9411E50049AE83 /* LocationReader.swift */; };
+		0167FC302C94132F0049AE83 /* ScrollViewChangeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC2F2C94132F0049AE83 /* ScrollViewChangeDetector.swift */; };
+		0167FC362C94FD8A0049AE83 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167FC352C94FD8A0049AE83 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +81,58 @@
 /* Begin PBXFileReference section */
 		0167FB882C90A21A0049AE83 /* Instaflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0167FB8B2C90A21A0049AE83 /* InstaflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaflixApp.swift; sourceTree = "<group>"; };
-		0167FB8D2C90A21A0049AE83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0167FB8F2C90A21B0049AE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0167FB922C90A21B0049AE83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0167FB942C90A21B0049AE83 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0167FB942C90A21B0049AE83 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0167FB972C90A21B0049AE83 /* Instaflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instaflix.xcdatamodel; sourceTree = "<group>"; };
 		0167FB9D2C90A21B0049AE83 /* InstaflixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaflixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0167FBA12C90A21B0049AE83 /* InstaflixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaflixTests.swift; sourceTree = "<group>"; };
 		0167FBA72C90A21B0049AE83 /* InstaflixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaflixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0167FBAB2C90A21B0049AE83 /* InstaflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaflixUITests.swift; sourceTree = "<group>"; };
 		0167FBAD2C90A21B0049AE83 /* InstaflixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaflixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0167FBBC2C90B6950049AE83 /* MediaItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemCell.swift; sourceTree = "<group>"; };
+		0167FBC32C90C4A20049AE83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0167FBC52C90FC490049AE83 /* SkeletonShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonShimmer.swift; sourceTree = "<group>"; };
+		0167FBC72C91FC400049AE83 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		0167FBC92C9203340049AE83 /* FilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterBarView.swift; sourceTree = "<group>"; };
+		0167FBCE2C9209040049AE83 /* Primitives+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Primitives+Extension.swift"; sourceTree = "<group>"; };
+		0167FBD02C923FF10049AE83 /* DMMediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMediaItem.swift; sourceTree = "<group>"; };
+		0167FBD42C925DE60049AE83 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		0167FBD62C925EF80049AE83 /* DBMediaItem+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBMediaItem+CoreData.swift"; sourceTree = "<group>"; };
+		0167FBDB2C92652F0049AE83 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		0167FBDD2C92653E0049AE83 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		0167FBDF2C9265620049AE83 /* Debugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugger.swift; sourceTree = "<group>"; };
+		0167FBE22C92677B0049AE83 /* InstaflixSensitive.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InstaflixSensitive.plist; sourceTree = "<group>"; };
+		0167FBE52C926C4E0049AE83 /* ClientSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSetup.swift; sourceTree = "<group>"; };
+		0167FBE82C92AC550049AE83 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		0167FBEA2C92AE830049AE83 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		0167FBEC2C92B2410049AE83 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		0167FBEE2C92B27B0049AE83 /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
+		0167FBF02C92B4440049AE83 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		0167FBF22C92B4FC0049AE83 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0167FBF42C92B5F30049AE83 /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		0167FBF82C92BB080049AE83 /* MediaItemsRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsRemote.swift; sourceTree = "<group>"; };
+		0167FBFB2C92CD6A0049AE83 /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		0167FBFE2C92D0600049AE83 /* MediaItemAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemAPIRepository.swift; sourceTree = "<group>"; };
+		0167FC012C92D1CE0049AE83 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		0167FC032C92D2F90049AE83 /* MediaItemDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemDBRepository.swift; sourceTree = "<group>"; };
+		0167FC052C938F430049AE83 /* LoadingSubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSubjects.swift; sourceTree = "<group>"; };
+		0167FC072C938F4E0049AE83 /* NetworkHelpers+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkHelpers+Combine.swift"; sourceTree = "<group>"; };
+		0167FC092C938FBD0049AE83 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		0167FC0C2C93905F0049AE83 /* MediaItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsUseCase.swift; sourceTree = "<group>"; };
+		0167FC102C93A4EF0049AE83 /* AppDI+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDI+Injections.swift"; sourceTree = "<group>"; };
+		0167FC172C93A8150049AE83 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		0167FC192C93A8C80049AE83 /* AppRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouting.swift; sourceTree = "<group>"; };
+		0167FC1F2C93B2650049AE83 /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		0167FC212C93B5200049AE83 /* NavigationBarConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfig.swift; sourceTree = "<group>"; };
+		0167FC232C93BAA90049AE83 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		0167FC252C93C4550049AE83 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0167FC272C93FA210049AE83 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0167FC292C9406D70049AE83 /* ViewLyfeCicleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLyfeCicleModifier.swift; sourceTree = "<group>"; };
+		0167FC2B2C9409970049AE83 /* ErrorRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRequestView.swift; sourceTree = "<group>"; };
+		0167FC2D2C9411E50049AE83 /* LocationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationReader.swift; sourceTree = "<group>"; };
+		0167FC2F2C94132F0049AE83 /* ScrollViewChangeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewChangeDetector.swift; sourceTree = "<group>"; };
+		0167FC352C94FD8A0049AE83 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0167FBC12C90C2D70049AE83 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +168,7 @@
 				0167FBA02C90A21B0049AE83 /* InstaflixTests */,
 				0167FBAA2C90A21B0049AE83 /* InstaflixUITests */,
 				0167FB892C90A21A0049AE83 /* Products */,
+				0167FBBF2C90C2D70049AE83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +185,15 @@
 		0167FB8A2C90A21A0049AE83 /* Instaflix */ = {
 			isa = PBXGroup;
 			children = (
-				0167FB8B2C90A21A0049AE83 /* InstaflixApp.swift */,
-				0167FB8D2C90A21A0049AE83 /* ContentView.swift */,
-				0167FB8F2C90A21B0049AE83 /* Assets.xcassets */,
-				0167FB942C90A21B0049AE83 /* Persistence.swift */,
-				0167FB962C90A21B0049AE83 /* Instaflix.xcdatamodeld */,
+				0167FC0F2C93A30C0049AE83 /* App */,
+				0167FC0E2C93A3010049AE83 /* Presentation */,
+				0167FC002C92D1B40049AE83 /* DIManager */,
+				0167FBF62C92B6D20049AE83 /* Data */,
+				0167FBE12C9267440049AE83 /* Resources */,
+				0167FBD82C9264DB0049AE83 /* Core */,
+				0167FBCB2C9206E90049AE83 /* Domain */,
+				0167FBBB2C90B5600049AE83 /* Components */,
+				0167FBBA2C90A23B0049AE83 /* Persistance */,
 				0167FB912C90A21B0049AE83 /* Preview Content */,
 			);
 			path = Instaflix;
@@ -133,6 +224,259 @@
 			path = InstaflixUITests;
 			sourceTree = "<group>";
 		};
+		0167FBBA2C90A23B0049AE83 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				0167FB962C90A21B0049AE83 /* InstaflixDB.xcdatamodeld */,
+				0167FB942C90A21B0049AE83 /* CoreDataManager.swift */,
+				0167FBD42C925DE60049AE83 /* CoreDataHelpers.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		0167FBBB2C90B5600049AE83 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBBC2C90B6950049AE83 /* MediaItemCell.swift */,
+				0167FBC52C90FC490049AE83 /* SkeletonShimmer.swift */,
+				0167FBC72C91FC400049AE83 /* FilterCell.swift */,
+				0167FBC92C9203340049AE83 /* FilterBarView.swift */,
+				0167FC2B2C9409970049AE83 /* ErrorRequestView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0167FBBF2C90C2D70049AE83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0167FBC22C90C4970049AE83 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBC32C90C4A20049AE83 /* Constants.swift */,
+				0167FBCE2C9209040049AE83 /* Primitives+Extension.swift */,
+				0167FBEC2C92B2410049AE83 /* URL+Extensions.swift */,
+				0167FBEE2C92B27B0049AE83 /* Combine+Extensions.swift */,
+				0167FC092C938FBD0049AE83 /* CancelBag.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0167FBCB2C9206E90049AE83 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC0B2C93903F0049AE83 /* UseCases */,
+				0167FBCC2C9206EF0049AE83 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0167FBCC2C9206EF0049AE83 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBD02C923FF10049AE83 /* DMMediaItem.swift */,
+				0167FBD62C925EF80049AE83 /* DBMediaItem+CoreData.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0167FBD82C9264DB0049AE83 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC162C93A7C80049AE83 /* UI */,
+				0167FBFA2C92CD4C0049AE83 /* Concurrency */,
+				0167FBD92C9264F20049AE83 /* Network */,
+				0167FBC22C90C4970049AE83 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0167FBD92C9264F20049AE83 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBE72C926C6C0049AE83 /* Request */,
+				0167FBE42C926C1C0049AE83 /* Client */,
+				0167FBDA2C9265120049AE83 /* Utils */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0167FBDA2C9265120049AE83 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBDB2C92652F0049AE83 /* Error.swift */,
+				0167FBDD2C92653E0049AE83 /* Configuration.swift */,
+				0167FBDF2C9265620049AE83 /* Debugger.swift */,
+				0167FBEA2C92AE830049AE83 /* Types.swift */,
+				0167FC052C938F430049AE83 /* LoadingSubjects.swift */,
+				0167FC072C938F4E0049AE83 /* NetworkHelpers+Combine.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0167FBE12C9267440049AE83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0167FB8F2C90A21B0049AE83 /* Assets.xcassets */,
+				0167FBE22C92677B0049AE83 /* InstaflixSensitive.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0167FBE42C926C1C0049AE83 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBE52C926C4E0049AE83 /* ClientSetup.swift */,
+				0167FBF22C92B4FC0049AE83 /* NetworkClient.swift */,
+				0167FBF42C92B5F30049AE83 /* ClientManager.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		0167FBE72C926C6C0049AE83 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBE82C92AC550049AE83 /* RequestBuilder.swift */,
+				0167FBF02C92B4440049AE83 /* NetworkRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0167FBF62C92B6D20049AE83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBFD2C92CF9E0049AE83 /* Repository */,
+				0167FBF72C92B6D70049AE83 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0167FBF72C92B6D70049AE83 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBF82C92BB080049AE83 /* MediaItemsRemote.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0167FBFA2C92CD4C0049AE83 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBFB2C92CD6A0049AE83 /* TaskScheduler.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		0167FBFD2C92CF9E0049AE83 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0167FBFE2C92D0600049AE83 /* MediaItemAPIRepository.swift */,
+				0167FC032C92D2F90049AE83 /* MediaItemDBRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0167FC002C92D1B40049AE83 /* DIManager */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC012C92D1CE0049AE83 /* DependencyInjector.swift */,
+			);
+			path = DIManager;
+			sourceTree = "<group>";
+		};
+		0167FC0B2C93903F0049AE83 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC0C2C93905F0049AE83 /* MediaItemsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0167FC0E2C93A3010049AE83 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC332C94FD520049AE83 /* Detail */,
+				0167FC122C93A7470049AE83 /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0167FC0F2C93A30C0049AE83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0167FB8B2C90A21A0049AE83 /* InstaflixApp.swift */,
+				0167FC102C93A4EF0049AE83 /* AppDI+Injections.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0167FC122C93A7470049AE83 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC152C93A7600049AE83 /* Coordinator */,
+				0167FC132C93A74F0049AE83 /* View */,
+				0167FC142C93A7560049AE83 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0167FC132C93A74F0049AE83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC252C93C4550049AE83 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0167FC142C93A7560049AE83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC232C93BAA90049AE83 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0167FC152C93A7600049AE83 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC272C93FA210049AE83 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0167FC162C93A7C80049AE83 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC172C93A8150049AE83 /* Routing.swift */,
+				0167FC192C93A8C80049AE83 /* AppRouting.swift */,
+				0167FC1F2C93B2650049AE83 /* GeometryReader.swift */,
+				0167FC212C93B5200049AE83 /* NavigationBarConfig.swift */,
+				0167FC292C9406D70049AE83 /* ViewLyfeCicleModifier.swift */,
+				0167FC2D2C9411E50049AE83 /* LocationReader.swift */,
+				0167FC2F2C94132F0049AE83 /* ScrollViewChangeDetector.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0167FC332C94FD520049AE83 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC342C94FD7C0049AE83 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		0167FC342C94FD7C0049AE83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0167FC352C94FD8A0049AE83 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +493,9 @@
 			dependencies = (
 			);
 			name = Instaflix;
+			packageProductDependencies = (
+				0167FBC02C90C2D70049AE83 /* SDWebImageSwiftUI */,
+			);
 			productName = Instaflix;
 			productReference = 0167FB882C90A21A0049AE83 /* Instaflix.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +568,9 @@
 				Base,
 			);
 			mainGroup = 0167FB7F2C90A21A0049AE83;
+			packageReferences = (
+				0167FBBE2C90C29D0049AE83 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0167FB892C90A21A0049AE83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0167FB932C90A21B0049AE83 /* Preview Assets.xcassets in Resources */,
+				0167FBE32C92677B0049AE83 /* InstaflixSensitive.plist in Resources */,
 				0167FB902C90A21B0049AE83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +614,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0167FB982C90A21B0049AE83 /* Instaflix.xcdatamodeld in Sources */,
-				0167FB952C90A21B0049AE83 /* Persistence.swift in Sources */,
-				0167FB8E2C90A21A0049AE83 /* ContentView.swift in Sources */,
+				0167FBE02C9265620049AE83 /* Debugger.swift in Sources */,
+				0167FC042C92D2F90049AE83 /* MediaItemDBRepository.swift in Sources */,
+				0167FBED2C92B2410049AE83 /* URL+Extensions.swift in Sources */,
+				0167FB982C90A21B0049AE83 /* InstaflixDB.xcdatamodeld in Sources */,
+				0167FC282C93FA210049AE83 /* MainCoordinator.swift in Sources */,
+				0167FBC82C91FC400049AE83 /* FilterCell.swift in Sources */,
+				0167FC022C92D1CE0049AE83 /* DependencyInjector.swift in Sources */,
+				0167FBEB2C92AE830049AE83 /* Types.swift in Sources */,
+				0167FC222C93B5200049AE83 /* NavigationBarConfig.swift in Sources */,
+				0167FC302C94132F0049AE83 /* ScrollViewChangeDetector.swift in Sources */,
+				0167FB952C90A21B0049AE83 /* CoreDataManager.swift in Sources */,
+				0167FC112C93A4EF0049AE83 /* AppDI+Injections.swift in Sources */,
+				0167FC0A2C938FBD0049AE83 /* CancelBag.swift in Sources */,
+				0167FC2E2C9411E50049AE83 /* LocationReader.swift in Sources */,
+				0167FBDE2C92653E0049AE83 /* Configuration.swift in Sources */,
+				0167FBE62C926C4E0049AE83 /* ClientSetup.swift in Sources */,
+				0167FC362C94FD8A0049AE83 /* DetailView.swift in Sources */,
+				0167FBCF2C9209040049AE83 /* Primitives+Extension.swift in Sources */,
+				0167FBF52C92B5F30049AE83 /* ClientManager.swift in Sources */,
+				0167FBC62C90FC490049AE83 /* SkeletonShimmer.swift in Sources */,
+				0167FBD52C925DE60049AE83 /* CoreDataHelpers.swift in Sources */,
+				0167FBD12C923FF10049AE83 /* DMMediaItem.swift in Sources */,
+				0167FBFC2C92CD6A0049AE83 /* TaskScheduler.swift in Sources */,
+				0167FC0D2C93905F0049AE83 /* MediaItemsUseCase.swift in Sources */,
+				0167FBF92C92BB080049AE83 /* MediaItemsRemote.swift in Sources */,
 				0167FB8C2C90A21A0049AE83 /* InstaflixApp.swift in Sources */,
+				0167FBE92C92AC550049AE83 /* RequestBuilder.swift in Sources */,
+				0167FC2A2C9406D70049AE83 /* ViewLyfeCicleModifier.swift in Sources */,
+				0167FBF12C92B4440049AE83 /* NetworkRequest.swift in Sources */,
+				0167FC2C2C9409970049AE83 /* ErrorRequestView.swift in Sources */,
+				0167FBBD2C90B6950049AE83 /* MediaItemCell.swift in Sources */,
+				0167FBD72C925EF80049AE83 /* DBMediaItem+CoreData.swift in Sources */,
+				0167FBFF2C92D0600049AE83 /* MediaItemAPIRepository.swift in Sources */,
+				0167FBEF2C92B27B0049AE83 /* Combine+Extensions.swift in Sources */,
+				0167FC082C938F4E0049AE83 /* NetworkHelpers+Combine.swift in Sources */,
+				0167FC062C938F430049AE83 /* LoadingSubjects.swift in Sources */,
+				0167FBDC2C92652F0049AE83 /* Error.swift in Sources */,
+				0167FC242C93BAA90049AE83 /* MainViewModel.swift in Sources */,
+				0167FC182C93A8150049AE83 /* Routing.swift in Sources */,
+				0167FBCA2C9203340049AE83 /* FilterBarView.swift in Sources */,
+				0167FC262C93C4550049AE83 /* MainView.swift in Sources */,
+				0167FC1A2C93A8C80049AE83 /* AppRouting.swift in Sources */,
+				0167FBC42C90C4A20049AE83 /* Constants.swift in Sources */,
+				0167FC202C93B2650049AE83 /* GeometryReader.swift in Sources */,
+				0167FBF32C92B4FC0049AE83 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +830,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,6 +860,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,14 +991,33 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		0167FBBE2C90C29D0049AE83 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0167FBC02C90C2D70049AE83 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0167FBBE2C90C29D0049AE83 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		0167FB962C90A21B0049AE83 /* Instaflix.xcdatamodeld */ = {
+		0167FB962C90A21B0049AE83 /* InstaflixDB.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				0167FB972C90A21B0049AE83 /* Instaflix.xcdatamodel */,
 			);
 			currentVersion = 0167FB972C90A21B0049AE83 /* Instaflix.xcdatamodel */;
-			path = Instaflix.xcdatamodeld;
+			path = InstaflixDB.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
